@@ -1,0 +1,620 @@
+/* ================================================
+   Hainan Huirui Trading Co., Ltd.
+   Responsive Styles
+   ================================================ */
+
+/* Extra Large Screens */
+@media (max-width: 1400px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.4rem; }
+    h3 { font-size: 1.9rem; }
+    
+    .hero h1 { font-size: 3.5rem; }
+    
+    .hero-visual {
+        width: 500px;
+        height: 500px;
+        right: -50px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+    }
+}
+
+/* Large Tablets and Laptops */
+@media (max-width: 1200px) {
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2.2rem; }
+    h3 { font-size: 1.6rem; }
+    
+    .container {
+        padding: 0 30px;
+    }
+    
+    .header-inner {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .nav-list {
+        gap: 25px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-visual {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+    
+    .culture-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .app-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .app-showcase {
+        order: -1;
+    }
+    
+    .app-phone {
+        width: 280px;
+        height: 560px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    .section {
+        padding: 80px 0;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 140px 0 80px;
+    }
+    
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero-visual {
+        display: none;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .culture-values {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto 80px;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr;
+        padding-left: 60px;
+        gap: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        text-align: left;
+        grid-column: 1;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-brand {
+        grid-column: 1;
+        text-align: center;
+    }
+    
+    .footer-brand .logo {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    .footer-newsletter .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.2rem; }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .logo svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 6px 15px;
+    }
+    
+    .btn {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 50px;
+    }
+    
+    .service-card {
+        padding: 30px 25px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .app-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-phone {
+        width: 260px;
+        height: 520px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    
+    .value-card {
+        padding: 35px 25px;
+    }
+    
+    .value-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .value-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .news-image {
+        height: 180px;
+    }
+    
+    .news-content {
+        padding: 20px;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer {
+        padding-top: 60px;
+    }
+    
+    .footer-description {
+        font-size: 0.9rem;
+    }
+    
+    .page-header {
+        padding: 130px 0 70px;
+    }
+    
+    .legal-page {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    
+    .legal-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .legal-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .legal-section p,
+    .legal-section li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .logo svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+    
+    .app-phone {
+        width: 240px;
+        height: 480px;
+    }
+    
+    .app-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .app-logo svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .stat-number {
+        font-size: 2.4rem;
+    }
+    
+    .value-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .value-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .news-image {
+        height: 160px;
+    }
+    
+    .news-category {
+        font-size: 0.7rem;
+        padding: 4px 12px;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin: 0 auto;
+    }
+    
+    .footer-bottom {
+        padding: 20px 0;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .hero-visual,
+    .btn,
+    .mobile-menu {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    /* Can be customized based on needs */
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo svg,
+    .service-icon svg,
+    .feature-icon svg {
+        transform: translateZ(0);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn-ripple::before {
+        display: none;
+    }
+    
+    .card-hover::before {
+        display: none;
+    }
+    
+    .tooltip::after {
+        display: none;
+    }
+    
+    /* Larger touch targets */
+    .nav-link {
+        padding: 12px 0;
+    }
+    
+    .service-card,
+    .feature-card,
+    .news-card {
+        padding: 25px;
+    }
+}
+
+/* Landscape Mode on Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        display: none;
+    }
+}
+
+/* Status Bar Safe Area for iOS */
+@supports (padding: max(0px)) {
+    .header {
+        padding-top: max(15px, env(safe-area-inset-top));
+    }
+    
+    .footer {
+        padding-bottom: max(25px, env(safe-area-inset-bottom));
+    }
+}
